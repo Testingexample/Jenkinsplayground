@@ -1,0 +1,21 @@
+{
+    "name": "cypress_e2e-automation",
+    "version": "1.0.0",
+    "description": "cypress e2e automation,test automation",
+    "main": "index.js",
+    "scripts": {
+      "test": "node_modules\\.bin\\cypress run",
+      "Run command":"npm run test --"
+    },
+    "keywords": [
+      "cypress",
+      "e2e",
+      "automation"
+    ],
+    "author": "cope automation",
+    "license": "ISC",
+    "dependencies": {
+      "cypress": "^4.8.0"
+    }
+  }
+  
