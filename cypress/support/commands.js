@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+Cypress.Commands.add("login" , (email, password) =>  {
+    cy.visit('https://productivv.ivlglobal.com/');
+    cy.title().should('eq' ,'Login | productivV');
+    cy.get('input[name=username]').should('be.visible').should('be.enabled').type(email);
+    cy.get('input[name=password]').should('be.enabled').type(password);
+    cy.get('button[type=submit]').should('be.enabled').click();
+    cy.get('[class="pull-right"]').should('be.visible').click();
+
+});
