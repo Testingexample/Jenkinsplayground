@@ -4,7 +4,7 @@
   "description": "cypress e2e automation,test automation",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports  && mkdir cypress\\reports\\mochareports",
+    "clean:reports": "IF EXIST cypress\\reports (rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mocha && mkdir cypress\\reports\\mochareports) ELSE (mkdir cypress\\reports && mkdir cypress\\reports\\mocha && mkdir cypress\\reports\\mochareports\\)",
     "pretest": "npm run clean:reports",
     "scripts": "cypress run",
     "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",

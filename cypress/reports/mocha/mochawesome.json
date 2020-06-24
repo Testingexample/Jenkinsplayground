@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
-    "passes": 1,
+    "tests": 1,
+    "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2020-06-22T08:14:48.027Z",
-    "end": "2020-06-22T08:15:14.399Z",
-    "duration": 26372,
-    "testsRegistered": 2,
-    "passPercent": 50,
+    "start": "2020-06-24T08:55:38.747Z",
+    "end": "2020-06-24T08:56:46.391Z",
+    "duration": 67644,
+    "testsRegistered": 1,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,73 +18,53 @@
   },
   "results": [
     {
-      "uuid": "310d567c-ac50-45af-b4a6-9d9e85f7450f",
+      "uuid": "fc2be2dc-5380-4730-bb3c-006562cd5ef8",
       "title": "",
-      "fullFile": "cypress\\integration\\examples\\login.spec.js",
-      "file": "cypress\\integration\\examples\\login.spec.js",
+      "fullFile": "cypress\\integration\\examples\\Filltimesheet.spec.js",
+      "file": "cypress\\integration\\examples\\Filltimesheet.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "0fa56f13-9835-45e4-bf9d-b011748091d0",
-          "title": "login and Verify title",
+          "uuid": "b59e94ba-119d-4405-9370-32b897a43b66",
+          "title": "filltimesheet",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "login and verify title",
-              "fullTitle": "login and Verify title login and verify title",
+              "title": "login and fill today timesheet",
+              "fullTitle": "filltimesheet login and fill today timesheet",
               "timedOut": null,
-              "duration": 24014,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.login(this.data.username, this.data.password);\ncy.get('[title=\"Designation\"]').contains('TEST ANALYST');\ncy.get('[href=\"#/home/dashboard\"]').should('be.visible').click();\ncy.get('[class=\"btn btn-primary  right-buffer-10\"]').should('be.visible').click();\ncy.get('[class=\"ng-tns-c6-17 ui-dropdown-label ui-inputtext ui-corner-all ui-placeholder ng-star-inserted\"]').click();\ncy.get('#bar-home > app-weekly > div > div.container-fluid > div > div > div.table-responsive.empdircontainer > div > div > table > tbody > tr:nth-child(3) > td.table-particulars.padding-top-0 > div > div.col-sm-12 > p-dropdown > div > div.ng-tns-c6-17.ui-dropdown-panel.ui-widget-content.ui-corner-all.ui-shadow.ng-trigger.ng-trigger-panelState > div.ui-dropdown-items-wrapper > ul > li:nth-child(1) > span').click();\ncy.get('#bar-home > app-weekly > div > div.container-fluid > div > div > div.table-responsive.empdircontainer > div > div > table > tbody > tr:nth-child(3) > td.table-cell.today > input').type('9:00');\ncy.get('[title=\"Save Weekly Timesheet\"]').click();",
-              "err": {},
-              "uuid": "a665936c-410b-4a5c-aade-04f8966e8dc3",
-              "parentUUID": "0fa56f13-9835-45e4-bf9d-b011748091d0",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "just login",
-              "fullTitle": "login and Verify title just login",
-              "timedOut": null,
-              "duration": 546,
+              "duration": 64803,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.login(this.data.username, this.data.password);",
+              "code": "cy.login(this.data.username, this.data.password);\ncy.get('[title=\"Designation\"]').contains('TEST ANALYST');\ncy.get('[href=\"#/home/dashboard\"]').should('be.visible').click();\ncy.get('[class=\"btn btn-primary  right-buffer-10\"]').should('be.visible').click();\ncy.get('[class=\"ng-tns-c6-17 ui-dropdown-label ui-inputtext ui-corner-all ui-placeholder ng-star-inserted\"]').click();\ncy.get('#bar-home > app-weekly > div > div.container-fluid > div > div > div.table-responsive.empdircontainer > div > div > table > tbody > tr:nth-child(3) > td.table-particulars.padding-top-0 > div > div.col-sm-12 > p-dropdown > div > div.ng-tns-c6-17.ui-dropdown-panel.ui-widget-content.ui-corner-all.ui-shadow.ng-trigger.ng-trigger-panelState > div.ui-dropdown-items-wrapper > ul > li:nth-child(1) > span').click();\ncy.get('#bar-home > app-weekly > div > div.container-fluid > div > div > div.table-responsive.empdircontainer > div > div > table > tbody > tr:nth-child(3) > td.table-cell.today > input').type('9:00');\ncy.get('[title=\"Save Weekly Timesheet\"]').click();",
               "err": {
-                "message": "TypeError: Cannot read property 'username' of undefined",
-                "estack": "TypeError: Cannot read property 'username' of undefined\n    at Context.eval (https://productivv.ivlglobal.com/__cypress/tests?p=cypress\\integration\\examples\\login.spec.js:21:24)",
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:151211:13)\n    at https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:152163:16\n    at tryCatcher (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:10161:23)\n    at https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:5283:41\n    at tryCatcher (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:10161:23)\n    at Promise._settlePromiseFromHandler (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:8096:31)\n    at Promise._settlePromise (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:8153:18)\n    at Promise._settlePromise0 (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:8198:10)\n    at Promise._settlePromises (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:8274:18)\n    at _drainQueueStep (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:4868:12)\n    at _drainQueue (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:4861:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:4877:5)\n    at Async.drainQueues (https://productivv.ivlglobal.com/__cypress/runner/cypress_runner.js:4747:14)\nFrom Your Spec Code:\n    at Context.eval (https://productivv.ivlglobal.com/__cypress/tests?p=cypress\\support\\index.js:30:6)",
                 "diff": null
               },
-              "uuid": "ef7cf1ee-3cf7-4778-8fe2-23404c45ae73",
-              "parentUUID": "0fa56f13-9835-45e4-bf9d-b011748091d0",
+              "uuid": "c4fc2b6e-9fcd-4ed8-8c5e-f3074d0238ae",
+              "parentUUID": "b59e94ba-119d-4405-9370-32b897a43b66",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "a665936c-410b-4a5c-aade-04f8966e8dc3"
-          ],
+          "passes": [],
           "failures": [
-            "ef7cf1ee-3cf7-4778-8fe2-23404c45ae73"
+            "c4fc2b6e-9fcd-4ed8-8c5e-f3074d0238ae"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 24560,
+          "duration": 64803,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -108,7 +88,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -120,9 +100,10 @@
       "options": {
         "id": "default",
         "reportDir": "cypress/reports/mocha",
+        "charts": true,
         "quite": true,
-        "overwrite": true,
-        "html": true,
+        "overwrite": false,
+        "html": false,
         "json": true
       },
       "version": "5.1.0"
