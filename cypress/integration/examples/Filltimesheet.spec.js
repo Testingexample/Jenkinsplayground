@@ -1,11 +1,11 @@
-describe("filltimesheet",function(){
+describe("Filltimesheet",function(){
 
     before(function(){
         cy.fixture("example").then(function(data){
             this.data = data;
         });
     });
-    it("login and fill today timesheet" , function(){
+    it("login and fill today's timesheet" , function(){
         cy.login(this.data.username,this.data.password);
         cy.get('[title="Designation"]').contains('TEST ANALYST');
         cy.get('[href="#/home/dashboard"]').should('be.visible').click();
