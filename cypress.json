@@ -7,7 +7,7 @@
             "charts": true,
             "quite": true,
             "overwrite": false,
-            "html": false,
+            "html": true,
             "json": true
         }
     }   
