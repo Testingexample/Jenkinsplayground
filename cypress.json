@@ -6,8 +6,8 @@
             "reportDir": "cypress/reports/mocha",
             "charts": true,
             "quite": true,
-            "overwrite": false,
-            "html": true,
+            "overwrite": true,
+            "html": false,
             "json": true
         }
     }   
