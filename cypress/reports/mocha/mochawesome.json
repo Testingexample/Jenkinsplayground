@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-29T08:15:34.389Z",
+    "end": "2020-06-29T08:15:35.045Z",
+    "duration": 656,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a30a85df-5408-4fd2-ab6c-440d40ffef5e",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\JanusAPi.js",
+      "file": "cypress\\integration\\examples\\JanusAPi.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e463b44e-c40a-4c6c-a97c-00d66db06068",
+          "title": "API Testing using Cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET-User List",
+              "fullTitle": "API Testing using Cypress GET-User List",
+              "timedOut": null,
+              "duration": 604,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'http://localhost:5008/api/profile/user',\n  headers: {\n    'content-type': 'application/json'\n  }\n}).then(function (response) {\n  expect(response.status).equal(200);\n  expect(response.statusText).equal('OK'); //    expect(response.body).to.not.be.null;\n  expect(response.body.userid).equal('jurcja4');\n  expect(response.body.firstname).equal('James');\n  expect(response.body.lastname).equal('Jurczewsky');\n  console.log(response.body);\n});",
+              "err": {},
+              "uuid": "0c6e127e-9178-439b-aed5-c5aaea1622eb",
+              "parentUUID": "e463b44e-c40a-4c6c-a97c-00d66db06068",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c6e127e-9178-439b-aed5-c5aaea1622eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 604,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "charts": true,
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

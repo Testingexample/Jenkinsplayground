@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-06-29T08:15:40.144Z",
+    "end": "2020-06-29T08:16:23.295Z",
+    "duration": 43151,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aa343676-abad-4758-8e50-bb51ba2ad48d",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\Login.spec.js",
+      "file": "cypress\\integration\\examples\\Login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "230bcc0f-eeac-4446-8ed3-b42b9623b72b",
+          "title": "Launch Janus and Verify Labels",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Landing page",
+              "fullTitle": "Launch Janus and Verify Labels Validate Landing page",
+              "timedOut": null,
+              "duration": 32259,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:8089/\");\ncy.get('#userInfoButtonElement').contains('James'); // cy.wait(5000);\n// cy.get('[sortby=\"date\"]').should('eq','Date');\ncy.xpath('//li[text()=\"Team Tasks\"]').contains('Team Tasks'); // cy.wait(5000);\ncy.xpath('//li[text()=\"Outage Notifications\"]').contains('Outage Notifications');",
+              "err": {
+                "message": "TypeError: Cannot read property 'split' of undefined",
+                "estack": "TypeError: Cannot read property 'split' of undefined\n    at splitStack (http://localhost:8089/__cypress/runner/cypress_runner.js:170178:21)\n    at stackWithLinesRemoved (http://localhost:8089/__cypress/runner/cypress_runner.js:170230:22)\n    at Object.stackWithReplacementMarkerLineRemoved (http://localhost:8089/__cypress/runner/cypress_runner.js:170252:10)\n    at preferredStackAndCodeFrameIndex (http://localhost:8089/__cypress/runner/cypress_runner.js:165874:23)\n    at Object.enhanceStack (http://localhost:8089/__cypress/runner/cypress_runner.js:165886:31)\n    at fail (http://localhost:8089/__cypress/runner/cypress_runner.js:163036:21)\n    at http://localhost:8089/__cypress/runner/cypress_runner.js:162912:14\n    at tryCatcher (http://localhost:8089/__cypress/runner/cypress_runner.js:10161:23)\n    at Promise._settlePromiseFromHandler (http://localhost:8089/__cypress/runner/cypress_runner.js:8096:31)\n    at Promise._settlePromise (http://localhost:8089/__cypress/runner/cypress_runner.js:8153:18)\n    at Promise._settlePromise0 (http://localhost:8089/__cypress/runner/cypress_runner.js:8198:10)\n    at Promise._settlePromises (http://localhost:8089/__cypress/runner/cypress_runner.js:8274:18)\n    at _drainQueueStep (http://localhost:8089/__cypress/runner/cypress_runner.js:4868:12)\n    at _drainQueue (http://localhost:8089/__cypress/runner/cypress_runner.js:4861:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:8089/__cypress/runner/cypress_runner.js:4877:5)\n    at Async.drainQueues (http://localhost:8089/__cypress/runner/cypress_runner.js:4747:14)",
+                "diff": null
+              },
+              "uuid": "26fa32e0-4874-4c68-bb1c-1037739d9789",
+              "parentUUID": "230bcc0f-eeac-4446-8ed3-b42b9623b72b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "26fa32e0-4874-4c68-bb1c-1037739d9789"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 32259,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "charts": true,
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
